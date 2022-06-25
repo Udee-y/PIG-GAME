@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+body {
+  font-weight: 300;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: #b16666;
+}
+
+.wrapper {
+  width: 900px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  display: table;
+  box-shadow: 0 5px rgba(0, 0, 0, 0.04);
+}
+
+.active {
+  background-color: #f7f7f7;
+  font-style: italic;
+  font-weight: 300;
+}
+.player-0-panel {
+  width: 50%;
+  float: left;
+  height: 500px;
+  padding: 100px;
+}
+.player-1-panel {
+  width: 50%;
+  float: left;
+  height: 500px;
+  padding: 100px;
+  text-align: center;
+}
+.player-name {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 30px;
+  color: #555;
+  padding: 1rem 0;
+  text-align: center;
+}
+.player-score {
+  color: red;
+  font-size: 50px;
+  font-weight: 400;
+  text-align: center;
+  padding: 10px 0;
+}
+.player-current-box {
+  background-color: #eb4d4d;
+  padding: 12px;
+  margin: 0 auto;
+  color: #fff;
+  width: 40%;
+  text-align: center;
+  margin-top: 60px;
+}
+.player-current-label {
+  margin-bottom: 1rem;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #222;
+}
+.player-current-score {
+  color: white;
+  font-size: 30px;
+}
+button{
+  position: absolute;
+  text-transform: uppercase;
+  width: 150px;
+  font-size: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: none;
+  color: #555;
+  cursor: pointer;
+  font-weight: 300;
+  padding: 6px 0;
+  border-radius: 15px;
+  transition: background-color 0.3s, color 0.3s;
+}
+button:hover{
+  font-weight: 600;
+}
+button:focus{
+  outline: none;
+}
+.button-new {
+  top: 45px;
+}
+.btn-roll {
+  top: 303px;
+}
+.btn-hold {
+  top: 367px;
+}
+.dice{
+    position: absolute;
+    top: 160px;
+    left: 57%;
+    transform: translateX(-57%);
+    height: 80px;
+}
+.second-dice{
+  position: absolute;
+  top: 160px;
+  left: 43%;
+  transform: translateX(-43%);
+  height: 80px;
+}
+
+.score-input{
+  position: absolute;
+  display: flex;
+  width: 400px;
+  padding: 4px;
+  top: 450px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+p{
+  font-size: 16px;
+  color: #555;
+  padding: 3px;
+}
+input:focus{
+  outline: none;
+}
+input{
+  padding: 2px;
+  margin: 0 10px;
+  font-size: 15px;
+  width: 150px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #555;
+}
+.winner{
+  background-color: #f7f7f7;
+}
+.winner .player-name{
+  font-weight: 700;
+  color: #eb4d4d;
+}
